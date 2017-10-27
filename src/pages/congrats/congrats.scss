@@ -1,0 +1,15 @@
+page-congrats {
+
+    .scroll-content {
+        background: url('../assets/images/cup.JPG') no-repeat;
+        background-size: cover;
+    }
+    
+    ion-grid {
+        height: 100%;
+        
+        ion-row {
+            height: 10.00%;
+        }
+    }
+}

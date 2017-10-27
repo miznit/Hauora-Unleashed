@@ -1,0 +1,16 @@
+page-map {
+
+    .slider-pager-page {
+        color: color($colors, light) !important;
+    }
+      
+    .slider-pager-page.active {
+        color: color($colors, secondary);
+    }
+
+    .swiper-pagination-bullet{
+        border-radius: 100%;
+        height: 17px;   
+        width: 17px;
+     }
+}

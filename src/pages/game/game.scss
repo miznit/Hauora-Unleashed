@@ -1,0 +1,108 @@
+page-game {
+
+    .hidden {
+        display: none;
+    }
+
+    .level-bar {
+        
+                height: 5px;
+                width: 100%;
+                border-radius: 5px;
+                border-bottom: 2px solid color($colors, secondary);
+    }
+    
+    .tinana-bar {
+
+            background-color: color($colors, primary);
+            height: 40px;
+            width: 100%;
+            padding-top: 2px;
+            padding-bottom: 2px;
+            padding-left: 2px;
+            padding-right: 2px;
+            border-radius: 20px;
+            border-bottom: 3px solid color($colors, secondary);
+            
+        span {
+            padding-top: 8px; 
+            text-align: center;
+            display: inline-block;
+            height: 100%;
+            border-radius: 20px;
+            background-color: color($colors, tinana);
+            transition: width .4s ease-in-out;    
+            
+        }
+    }
+    
+
+    .wairua-bar {
+        background-color: color($colors, primary);
+        height: 40px;
+        width: 100%;
+        padding-top: 2px;
+        padding-bottom: 2px;
+        padding-left: 2px;
+        padding-right: 2px;
+        border-radius: 20px;
+        border-bottom: 3px solid color($colors, secondary);
+        
+    span {
+        padding-top: 8px; 
+        text-align: center;
+        display: inline-block;
+        height: 100%;
+        border-radius: 20px;
+        background-color: color($colors, wairua);
+        transition: width .4s ease-in-out;    
+        
+        }
+    }
+
+    .whanau-bar {
+        background-color: color($colors, primary);
+        height: 40px;
+        width: 100%;
+        padding-top: 2px;
+        padding-bottom: 2px;
+        padding-left: 2px;
+        padding-right: 2px;
+        border-radius: 20px;
+        border-bottom: 3px solid color($colors, secondary);
+        
+    span {
+        padding-top: 8px; 
+        text-align: center;
+        display: inline-block;
+        height: 100%;
+        border-radius: 20px;
+        background-color: color($colors, whanau);
+        transition: width .4s ease-in-out;    
+        
+        }
+    }
+
+    .hinengaro-bar {
+        background-color: color($colors, primary);
+        height: 40px;
+        width: 100%;
+        padding-top: 2px;
+        padding-bottom: 2px;
+        padding-left: 2px;
+        padding-right: 2px;
+        border-radius: 20px;
+        border-bottom: 3px solid color($colors, secondary);
+        
+    span {
+        padding-top: 8px; 
+        text-align: center;
+        display: inline-block;
+        height: 100%;
+        border-radius: 20px;
+        background-color: color($colors, hinengaro);
+        transition: width .4s ease-in-out;    
+        
+        }
+    }
+}

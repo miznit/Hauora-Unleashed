@@ -1,0 +1,92 @@
+<!--
+  Generated template for the RegisterPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header class="background">
+
+  <ion-navbar class="background">
+    <ion-title>Register</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-grid> 
+
+    <ion-row>
+        <ion-col col-12>
+            <ion-row>
+                <ion-col col-6>
+                            <img class="img-center" src="assets/images/male.JPG"/>
+                </ion-col>
+
+                <ion-col col-6> 
+                             <img class="img-center" src="assets/images/female.JPG"/>
+                </ion-col>
+            </ion-row>
+        </ion-col>
+    </ion-row>
+    <ion-row>
+        <ion-col>
+                <ion-segment [(ngModel)]="Avatar">
+                    <ion-segment-button value="A">
+                        A
+                    </ion-segment-button>
+                    <ion-segment-button value="B">
+                        B
+                    </ion-segment-button>
+                </ion-segment>
+        </ion-col>
+    </ion-row>  
+
+    <ion-row>
+        <ion-col>
+            <ion-item>
+                <ion-label floating>What is your name?</ion-label>
+                <ion-input type="text" #name></ion-input>
+            </ion-item>
+        </ion-col>
+    </ion-row>
+
+    <ion-row>
+        <ion-col>
+            <ion-item>
+                    <ion-label floating>Where do you live?</ion-label>
+                    <ion-input type="text" #location></ion-input>
+            </ion-item>
+        </ion-col>
+    </ion-row>
+
+    <ion-row>
+        <ion-col>
+            <ion-item>
+                <ion-label floating>How old are you?</ion-label>
+                <ion-input type="number" #age></ion-input>
+            </ion-item>
+        </ion-col>
+    </ion-row>
+
+
+    <ion-row>
+        <ion-col>
+            <ion-item>
+                <ion-label floating>What iwi do you belong to?</ion-label>
+                <ion-input type="text" #iwi>></ion-input>
+            </ion-item>
+        </ion-col>
+    </ion-row>
+        
+    <ion-row>
+        <ion-col col-4></ion-col>
+        <ion-col col-4>
+            <button ion-button round color="secondary" (click)="UserRegister()">Timata</button>
+        </ion-col>
+        <ion-col col-4></ion-col>
+    </ion-row>
+
+  </ion-grid>
+    
+</ion-content>

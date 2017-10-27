@@ -1,0 +1,121 @@
+<!--
+  Generated template for the LevelupPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>New Level</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content no-padding>
+<ion-grid>
+  <ion-row>
+    <ion-col>
+      <ion-card style="border-radius: 20px 20px 20px 20px;">
+        <ion-card-content text-wrap >
+            What do you think of the Hauora Unleashed Expo?
+        </ion-card-content>
+      </ion-card>
+    </ion-col>
+  </ion-row>
+
+  <ion-row>
+    <ion-col col-2>
+        <button ion-button [clear]="likeIsClear" [outline]="likeIsOutline" (click)="likeClick()">
+            <ion-img src="assets/images/like.JPG"></ion-img>
+        </button>
+    </ion-col>
+    <ion-col col-2>
+        <button ion-button [clear]="loveIsClear" [outline]="loveIsOutline" (click)="loveClick()">
+            <ion-img src="assets/images/love.JPG"></ion-img>
+        </button>
+      </ion-col>
+      <ion-col col-2>
+          <button ion-button [clear]="happyIsClear" [outline]="happyIsOutline" (click)="happyClick()">
+              <ion-img src="assets/images/happy.JPG"></ion-img>
+          </button>
+      </ion-col>
+      <ion-col col-2>
+          <button ion-button [clear]="wowIsClear" [outline]="wowIsOutline" (click)="wowClick()">
+              <ion-img src="assets/images/wow.JPG"></ion-img>
+          </button>
+      </ion-col>
+      <ion-col col-2>
+          <button ion-button [clear]="cryIsClear" [outline]="cryIsOutline" (click)="cryClick()">
+              <ion-img src="assets/images/cry.JPG"></ion-img>
+          </button>
+      </ion-col>
+      <ion-col col-2>
+        <button ion-button [clear]="angryIsClear" [outline]="angryIsOutline" (click)="angryClick()">
+              <ion-img src="assets/images/angry.JPG"></ion-img>
+          </button>
+      </ion-col>
+
+  </ion-row>
+
+  <ion-row>
+      <ion-col col-1></ion-col>
+  
+      <ion-col col-10>
+        <ion-card style="border-radius: 20px 20px 20px 20px;">
+          <ion-card-content text-wrap >
+              Would you come again?
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+
+      <ion-col col-1></ion-col>
+  
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+          <ion-item>
+              <ion-segment [(ngModel)]="comeAgain">
+                  <ion-segment-button value="Yes">
+                      Yes
+                  </ion-segment-button>
+                  <ion-segment-button value="No">
+                      No
+                  </ion-segment-button>
+              </ion-segment>
+            </ion-item>
+        </ion-col>
+  </ion-row>  
+  <ion-row>
+      <ion-col col-2></ion-col>
+  
+      <ion-col col-8>
+        <ion-card style="border-radius: 20px 20px 20px 20px;">
+          <ion-card-content text-wrap >
+              Contact number if you win
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+
+      <ion-col col-2></ion-col>
+  
+    </ion-row>
+
+  <ion-row>
+      <ion-col>
+          <ion-item>
+              <label floating color="secondary" >Phone Number</label>
+              <ion-input type="tel" #phone></ion-input>
+          </ion-item>
+      </ion-col>
+    </ion-row>  
+
+    <ion-row>
+      <ion-col>
+        <button ion-button (click)="levelUp()">Continue</button>
+      </ion-col>
+    </ion-row>  
+  </ion-grid>
+        
+</ion-content>

@@ -1,0 +1,146 @@
+<!--
+  Generated template for the SchedulePage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+
+<ion-header>
+    <ion-navbar no-border-bottom>
+      <ion-title>
+        Schedule
+      </ion-title>
+    </ion-navbar>
+  
+    <ion-toolbar no-border-top selectedIndex="1">
+      <ion-segment [(ngModel)]="session">
+        <ion-segment-button value="Sat AM">Sat AM</ion-segment-button>
+        <ion-segment-button value="Sat PM">Sat PM</ion-segment-button>
+        <ion-segment-button value="Sun AM">Sun AM</ion-segment-button>
+        <ion-segment-button value="Sun PM">Sun PM</ion-segment-button>
+      </ion-segment>
+    </ion-toolbar>
+</ion-header>
+  
+  <ion-content>
+
+    <div [ngSwitch]="session">
+      <ion-list *ngSwitchCase="'Sat AM'">
+          <ion-item>
+              <div style="float:left; width: 10%">
+                <ion-icon name="basketball"></ion-icon>
+              </div>
+              <div style="float:left; width: 80%">
+                  <h2>9.00am Some Activity</h2>
+              </div>
+              <div style="float:left; width: 10%">
+              </div>
+            </ion-item>
+            <ion-item>
+                <div style="float:left; width: 10%">
+                  <ion-icon name="basketball"></ion-icon>
+                </div>
+                <div style="float:left; width: 80%">
+                    <h2>10.00am More Activity</h2>
+                </div>
+                <div style="float:left; width: 10%">
+                    <ion-icon name="ribbon"></ion-icon>
+                </div>
+              </ion-item>
+              <ion-item>
+                  <div style="float:left; width: 10%">
+                    <ion-icon name="basketball"></ion-icon>
+                  </div>
+                  <div style="float:left; width: 80%">
+                      <h2>10.30am Even more Activity</h2>
+                  </div>
+                  <div style="float:left; width: 10%">
+                  </div>
+                </ion-item>
+                <ion-item>
+                    <div style="float:left; width: 10%">
+                      <ion-icon name="basketball"></ion-icon>
+                    </div>
+                    <div style="float:left; width: 80%">
+                        <h2>11.00am Almost last Activity</h2>
+                    </div>
+                    <div style="float:left; width: 10%">
+                    </div>
+                  </ion-item>
+                  <ion-item>
+                      <div style="float:left; width: 10%">
+                        <ion-icon name="basketball"></ion-icon>
+                      </div>
+                      <div style="float:left; width: 80%">
+                          <h2>11.45am Last Activity</h2>
+                      </div>
+                      <div style="float:left; width: 10%">
+                          <ion-icon name="ribbon"></ion-icon>
+                      </div>
+                    </ion-item>
+            </ion-list>
+  
+      <ion-list *ngSwitchCase="'Sat PM'">
+          <ion-item>
+            <ion-thumbnail item-start>
+                <ion-icon name="baseball"></ion-icon>
+              </ion-thumbnail>
+            <h2>12.00pm Activity</h2>
+          </ion-item>
+      </ion-list>
+    
+        <ion-list *ngSwitchCase="'Sun AM'">
+            <ion-item>
+              <ion-thumbnail item-start>
+                  <ion-icon name="american-football"></ion-icon>
+              </ion-thumbnail>
+              <h2>9.00am Activity</h2>
+            </ion-item>
+            <ion-item>
+              <ion-thumbnail item-start>
+                  <ion-icon name="american-football"></ion-icon>
+              </ion-thumbnail>
+              <h2>10.00am Activity</h2>
+            </ion-item>
+            <ion-item>
+              <ion-thumbnail item-start>
+                  <ion-icon name="american-football"></ion-icon>
+              </ion-thumbnail>
+              <h2>11.00am Activity</h2>
+            </ion-item>
+            <ion-item>
+              <ion-thumbnail item-start>
+                  <ion-icon name="american-football"></ion-icon>
+              </ion-thumbnail>
+              <h2>12.00am Activity</h2>
+            </ion-item>
+        </ion-list>
+      
+        <ion-list *ngSwitchCase="'Sun PM'">
+              <ion-item>
+                <ion-thumbnail item-start>
+                    <ion-icon name="chatbubbles"></ion-icon>
+                </ion-thumbnail>
+                <h2>12.00pm Activity</h2>
+              </ion-item>
+              <ion-item>
+                <ion-thumbnail item-start>
+                    <ion-icon name="chatbubbles"></ion-icon>
+                </ion-thumbnail>
+                <h2>1.00pm Activity</h2>
+              </ion-item>
+              <ion-item>
+                  <ion-thumbnail item-start>
+                      <ion-icon name="chatbubbles"></ion-icon>
+                  </ion-thumbnail>
+                  <h2>2.00pm Activity</h2>
+                </ion-item>
+              <ion-item>
+                <ion-thumbnail item-start>
+                    <ion-icon name="chatbubbles"></ion-icon>
+                </ion-thumbnail>
+                <h2>3.00pm Activity</h2>
+              </ion-item>
+        </ion-list>
+    </div>        
+  </ion-content>
